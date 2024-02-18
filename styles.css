@@ -1,0 +1,69 @@
+body {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+header {
+background: rgba(255, 255, 255, 0.13);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.2px);
+-webkit-backdrop-filter: blur(2.2px);
+border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.er-primo {
+    position: fixed; /* O position: absolute; */
+    right: 20px;
+    top: 13px;
+    width: 90px;
+    border-radius: 20px;
+}
+
+button {
+    
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #9147ff;
+    color: white;
+    padding: 0 20px;
+    :hover {
+        background-color: #772ce8;
+    }
+
+}
+
+.mesa {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+    margin-top: 100px;
+}
+
+.carta {
+    border-radius: 15px;
+    cursor: grab;
+    width: 230px;
+    height: 330px;
+    overflow: hidden; /* Oculta el contenido que sobresale del contenedor */
+}
+
+.carta img {
+    width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+    height: 330px; /* La altura se ajusta automáticamente para mantener la proporción */
+    display: block; /* Evita que la imagen tenga márgenes y ajusta correctamente */
+}

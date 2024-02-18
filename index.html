@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Juega con er primo Drikah</title>
+  </head>
+  <body>
+    <header><h1>Venga primo adivina er número y ganate una pasta</h1></header>
+    <h2 id="creditos"></h2>
+    <img src="img/primo-drikah.png" alt="er_primo" class="er-primo" />
+    <button onclick="reiniciarJuego()" id="">Jugar otra vez</button>
+    <button onclick="volverManana()">Irte y volver otro día</button>
+    <!-- Botón para reiniciar el juego -->
+    <section class="mesa">
+      <div class="carta" onclick="mostrarCarta(this)">
+        <img src="img/carta-volteada.jpg" alt="carta_volteada" data-index="0" />
+      </div>
+      <div class="carta" onclick="mostrarCarta(this)">
+        <img src="img/carta-volteada.jpg" alt="carta_volteada" data-index="1" />
+      </div>
+      <div class="carta" onclick="mostrarCarta(this)">
+        <img src="img/carta-volteada.jpg" alt="carta_volteada" data-index="2" />
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
